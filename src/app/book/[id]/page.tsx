@@ -16,9 +16,12 @@ async function getBookDetails(id: string): Promise<Book | null> {
       return null;
     }
 
-    const res = await fetch(`http://localhost:8000/books/${id}`, {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      `https://circle-frontend-backend.onrender.com/books/${id}`,
+      {
+        cache: "no-store",
+      }
+    );
 
     if (!res.ok) {
       if (res.status === 404) {

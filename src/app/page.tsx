@@ -10,7 +10,7 @@ import { BookCardSkeleton } from "./components/BookCardSkeleton";
 // --- Data Fetching Function ---
 async function getBooks(): Promise<Book[]> {
   try {
-    const res = await fetch("http://localhost:8000/books", {
+    const res = await fetch("https://circle-frontend-backend.onrender.com/books", {
       cache: "no-store",
     });
 

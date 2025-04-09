@@ -33,7 +33,7 @@ export default function PurchaseButton({
 
     try {
       const res = await fetch(
-        `http://localhost:8000/books/${bookId}/purchase`,
+        `https://circle-frontend-backend.onrender.com/books/${bookId}/purchase`,
         {
           method: "POST",
           headers: {},
